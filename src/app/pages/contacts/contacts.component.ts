@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ContactsCardComponent, IContact, LinkType} from "../../components/contacts-card/contacts-card.component";
+import {ContactCardComponent, IContact, LinkType} from "../../components/contact-card/contact-card.component";
 import {BehaviorSubject} from "rxjs";
 import {CommonModule} from "@angular/common";
 
@@ -8,7 +8,7 @@ import {CommonModule} from "@angular/common";
   selector: 'app-contacts',
   templateUrl: './contacts.component.html',
   styleUrls: ['./contacts.component.scss'],
-  imports:[CommonModule, ContactsCardComponent],
+  imports:[CommonModule, ContactCardComponent],
 })
 export class ContactsComponent implements OnInit {
 

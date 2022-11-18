@@ -5,6 +5,7 @@ import {PageNotFoundComponent} from "./pages/page-not-found/page-not-found.compo
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'about'},
   {path: 'about', loadComponent: () => import('./pages/about/about.component').then(c => c.AboutComponent)},
+  {path: 'works', loadComponent: () => import('./pages/works/works.component').then(c => c.WorksComponent)},
   {path: 'contacts', loadComponent: () => import('./pages/contacts/contacts.component').then(c => c.ContactsComponent)},
   {path: '**', component: PageNotFoundComponent}
 ];

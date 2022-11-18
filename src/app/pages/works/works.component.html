@@ -1,0 +1,19 @@
+<section class="works">
+  <h2>My Works:</h2>
+  <div class="works-filter">
+    <div class="type" *ngFor="let item of workTypeArray" (click)="selectType(item)" [class.active]="item.active">
+      {{item.type}}
+    </div>
+  </div>
+  <div class="works-content">
+    <div class="row">
+      <ng-container *ngFor="let work of works">
+        <div *ngIf="work.isShow"
+             class="col-md-6 col-12"
+             [ngClass]="worksActiveLength === 1 ? 'col-lg-12' : (worksActiveLength === 2 ? 'col-lg-6' : 'col-lg-4')">
+          <app-work-card [work]="work"></app-work-card>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</section>

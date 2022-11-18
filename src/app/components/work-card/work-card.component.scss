@@ -1,0 +1,54 @@
+.card {
+  min-width: 300px;
+  height: 300px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #131313;
+  background-size: contain;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 5px 5px 10px #000;
+
+  &-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 105px;
+    background: #fff;
+    width: 100%;
+    color: #131313;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+
+    h4 {
+      line-height: 100%;
+    }
+
+  }
+
+  &:hover {
+    transform: rotate(-2deg);
+    z-index: 1;
+    .card-info {
+      transform: rotate(4deg) scale(1.1);
+    }
+  }
+}
+
+.types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+
+  .type {
+    padding: 0.3rem 0.7rem;
+    background: #c5c5c5;
+    border-radius: 5px;
+    font-size: 0.8rem;
+  }
+}
+

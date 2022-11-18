@@ -1,0 +1,8 @@
+<div class="card" [style.background-image]="'url(./assets/works/'+work.id+'.jpg)'">
+  <div class="card-info">
+    <h4>{{work.name}}</h4>
+    <div class="types">
+      <div class="type" *ngFor="let type of work.types">{{type}}</div>
+    </div>
+  </div>
+</div>

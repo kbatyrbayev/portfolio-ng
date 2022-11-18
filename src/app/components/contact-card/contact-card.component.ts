@@ -1,11 +1,10 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {BrowserModule} from "@angular/platform-browser";
 import {CommonModule} from "@angular/common";
 
 @Component({
   standalone: true,
   imports: [CommonModule],
-  selector: 'app-contacts-card',
+  selector: 'app-contact-card',
   template: `
     <div class="card">
       <h3>{{contact.title}}</h3>
@@ -57,7 +56,7 @@ import {CommonModule} from "@angular/common";
     }
   `]
 })
-export class ContactsCardComponent implements OnInit {
+export class ContactCardComponent implements OnInit {
 
   linkType = LinkType;
 
