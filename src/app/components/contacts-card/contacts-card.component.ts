@@ -1,6 +1,10 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {BrowserModule} from "@angular/platform-browser";
+import {CommonModule} from "@angular/common";
 
 @Component({
+  standalone: true,
+  imports: [CommonModule],
   selector: 'app-contacts-card',
   template: `
     <div class="card">

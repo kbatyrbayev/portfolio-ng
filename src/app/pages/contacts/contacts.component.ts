@@ -1,11 +1,14 @@
 import {Component, OnInit} from '@angular/core';
-import {IContact, LinkType} from "../../components/contacts-card/contacts-card.component";
+import {ContactsCardComponent, IContact, LinkType} from "../../components/contacts-card/contacts-card.component";
 import {BehaviorSubject} from "rxjs";
+import {CommonModule} from "@angular/common";
 
 @Component({
+  standalone: true,
   selector: 'app-contacts',
   templateUrl: './contacts.component.html',
-  styleUrls: ['./contacts.component.scss']
+  styleUrls: ['./contacts.component.scss'],
+  imports:[CommonModule, ContactsCardComponent],
 })
 export class ContactsComponent implements OnInit {
 
