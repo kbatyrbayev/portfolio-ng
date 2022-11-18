@@ -10,12 +10,12 @@ import {ContactsComponent} from "./pages/contacts/contacts.component";
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
     PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AboutComponent,
     ContactsComponent,
   ],
   providers: [],
