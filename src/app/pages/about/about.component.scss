@@ -9,6 +9,29 @@
     grid-template-areas: 'exp edu' 'exp skills';
     gap: 2rem 1rem;
     grid-template-columns: 1fr 1fr;
+    >div {
+      h2 {
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 3rem;
+          height: 3px;
+          background: #fff;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          left: calc(3rem + 3px);
+          bottom: 0;
+          width: 85%;
+          height: 1px;
+          background: #fff;
+        }
+      }
+    }
   }
 }
 
