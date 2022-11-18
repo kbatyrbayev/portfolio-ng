@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./assets/custom-styles/reset";
+@import "./assets/custom-styles/grid";
+
+body {
+  background: #28282B;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+

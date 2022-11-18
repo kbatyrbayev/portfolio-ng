@@ -1,0 +1,15 @@
+<section class="contacts">
+  <div class="contacts-header">
+    <h2 class="title">let's get in touch.</h2>
+    <p><span class="location">my location</span>: Kazakhstan, Almaty(GMT+6) | {{clock | async}}</p>
+  </div>
+  <div class="contacts-body">
+    <div class="cards">
+      <div class="row">
+        <div class="col-md-6 col-12" *ngFor="let contact of contacts">
+          <app-contacts-card [contact]="contact"></app-contacts-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
