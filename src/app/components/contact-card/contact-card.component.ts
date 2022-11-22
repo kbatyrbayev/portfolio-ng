@@ -1,12 +1,14 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {CommonModule} from "@angular/common";
+import { TitleComponent } from '../title/title.component';
 
 @Component({
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TitleComponent],
   selector: 'app-contact-card',
   template: `
     <div class="card">
+      <app-title [title]="contact.title"></app-title>
       <h3>{{contact.title}}</h3>
       <ng-container [ngSwitch]="contact.type">
         <a *ngSwitchCase="linkType.Link" [attr.href]="'https://www.'+contact.link" target="_blank">{{contact.link}}</a>
@@ -19,31 +21,6 @@ import {CommonModule} from "@angular/common";
     .card {
       margin-bottom: 2rem;
       padding-right: 2rem;
-    }
-    h3 {
-      font-size: 1.5rem;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-      font-weight: normal;
-      position: relative;
-      &:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 3rem;
-        height: 3px;
-        background: #fff;
-      }
-      &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 3.2rem;
-        width: calc(100% - 3rem);
-        height: 1px;
-        background: #fff;
-      }
     }
     a {
       font-size: 1.2rem;
