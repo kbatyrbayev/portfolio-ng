@@ -1,19 +1,21 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {CommonModule} from "@angular/common";
-import { TitleComponent } from '../title/title.component';
+import {HeaderComponent} from "../header.component";
 
 @Component({
   standalone: true,
-  imports: [CommonModule, TitleComponent],
+  imports: [CommonModule, HeaderComponent],
   selector: 'app-contact-card',
   template: `
     <div class="card">
-      <app-title [title]="contact.title"></app-title>
-      <h3>{{contact.title}}</h3>
+      <app-header [title]="contact.title"></app-header>
       <ng-container [ngSwitch]="contact.type">
-        <a *ngSwitchCase="linkType.Link" [attr.href]="'https://www.'+contact.link" target="_blank">{{contact.link}}</a>
-        <a *ngSwitchCase="linkType.File" href="./assets/cv_pdf.pdf" target="_blank">{{contact.link}}</a>
-        <a *ngSwitchCase="linkType.Email" [attr.href]="'mailto:'+contact.link" target="_blank">{{contact.link}}</a>
+        <a class="card__link" *ngSwitchCase="linkType.Link" [attr.href]="'https://www.'+contact.link"
+           target="_blank">{{contact.link}}</a>
+        <a class="card__link" *ngSwitchCase="linkType.File" [attr.href]="'./assets/cv_pdf.pdf'"
+           target="_blank">{{contact.link}}</a>
+        <a class="card__link" *ngSwitchCase="linkType.Email" [attr.href]="'mailto:'+contact.link"
+           target="_blank">{{contact.link}}</a>
       </ng-container>
     </div>
   `,
@@ -21,30 +23,23 @@ import { TitleComponent } from '../title/title.component';
     .card {
       margin-bottom: 2rem;
       padding-right: 2rem;
+
+      &__link {
+        font-size: 1.2rem;
+        word-break: break-all;
+      }
     }
-    a {
-      font-size: 1.2rem;
-      word-break: break-all;
-    }
+
     @media (max-width: 575px) {
-      h3, a {
+      .card__link {
         font-size: 1rem;
       }
     }
   `]
 })
-export class ContactCardComponent implements OnInit {
-
+export class ContactCardComponent {
   linkType = LinkType;
-
   @Input() contact!: IContact;
-
-  constructor() {
-  }
-
-  ngOnInit(): void {
-  }
-
 }
 
 export interface IContact {

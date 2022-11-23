@@ -1,36 +1,14 @@
 .about {
   font-size: 2rem;
-  h1 {
-    text-align: center;
-  }
-  &-content {
-    padding-top: 4rem;
+
+  &__content {
     display: grid;
     grid-template-areas: 'exp edu' 'exp skills';
     gap: 2rem 1rem;
     grid-template-columns: 1fr 1fr;
-    >div {
-      h2 {
-        position: relative;
-        &:before {
-          content: '';
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 3rem;
-          height: 3px;
-          background: #fff;
-        }
-        &:after {
-          content: '';
-          position: absolute;
-          left: calc(3rem + 3px);
-          bottom: 0;
-          width: 85%;
-          height: 1px;
-          background: #fff;
-        }
-      }
+
+    > div {
+      padding-right: 2rem;
     }
   }
 }
@@ -47,37 +25,40 @@
   grid-area: skills;
 }
 
-h2 {
-  color: gold;
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
-}
-
 .item {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
-  h3 {
-    font-weight: normal;
-    font-size: 1.5rem;
-    margin-bottom: 0;
-  }
-  span, strong {
-    font-weight: normal;
-    font-size: 1rem;
-    opacity: 0.8;
-  }
-  strong {
-    opacity: 1;
-  }
 }
+
+.job {
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.date, .skills-list {
+  font-weight: normal;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.skills-list {
+  opacity: 1;
+}
+
 
 @media (max-width: 767px) {
   .about {
     font-size: 1.5rem;
-    &-content {
+
+    &__content {
       grid-template-areas: 'exp' 'edu' 'skills';
       grid-template-columns: 1fr;
+
+      > div {
+        padding-right: 0;
+      }
     }
   }
 }

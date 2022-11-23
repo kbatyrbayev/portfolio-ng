@@ -1,15 +1,16 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {WorkCardComponent} from "../../components/work-card/work-card.component";
+import {TitleComponent} from "../../components/title.component";
 
 @Component({
   selector: 'app-works',
   standalone: true,
-  imports: [CommonModule, WorkCardComponent],
+  imports: [CommonModule, WorkCardComponent, TitleComponent],
   templateUrl: './works.component.html',
   styleUrls: ['./works.component.scss']
 })
-export class WorksComponent implements OnInit {
+export class WorksComponent{
 
   workType = WorkType;
   workTypeArray: IWorkTypeArray[] = [];
@@ -22,9 +23,6 @@ export class WorksComponent implements OnInit {
   ]
 
   constructor() {
-  }
-
-  ngOnInit(): void {
     this.workTypeArray = Object.values(this.workType).map(r => {
       return {
         type: r,
@@ -47,10 +45,6 @@ export class WorksComponent implements OnInit {
     } else if(types.length === 0) {
       this.works.forEach(f => f.isShow = true);
     }
-  }
-
-  get worksActiveLength() {
-    return this.works.filter(f => f.isShow).length
   }
 
 }

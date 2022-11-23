@@ -1,41 +1,6 @@
-.contacts {
-  &-header {
-    text-align: center;
-  }
-
-  &-body {
-    padding-top: 10rem;
-  }
-}
-
-.title {
-  font-size: 4rem;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-
-  &:after {
-    content: '';
-    display: block;
-    margin: 0 auto;
-    width: 50px;
-    height: 3px;
-    border-radius: 3px;
-    background: #fff;
-  }
-}
-
 .location {
-  text-transform: uppercase;
-}
-
-@media (max-width: 767px) {
-  .title {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .title {
-    font-size: 2rem;
+  margin-top: 1rem;
+  &__title {
+    text-transform: uppercase;
   }
 }
