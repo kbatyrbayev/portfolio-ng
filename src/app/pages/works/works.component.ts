@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {WorkCardComponent} from "../../components/work-card/work-card.component";
 import {TitleComponent} from "../../components/title.component";
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-works',
@@ -22,7 +23,8 @@ export class WorksComponent{
     {id: 5, name: 'IDET', types: [this.workType.angular], isShow: true}
   ]
 
-  constructor() {
+  constructor(private title: Title) {
+    this.title.setTitle('Works | Kairat Batyrbayev');
     this.workTypeArray = Object.values(this.workType).map(r => {
       return {
         type: r,
