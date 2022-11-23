@@ -1,1 +1,13 @@
-<p>about-work works!</p>
+<section class="work" *ngIf="!loading; else loadWrapper">
+  <ng-container *ngIf="work; else notFound">
+    <app-title [title]="work.name"></app-title>
+  </ng-container>
+</section>
+
+<ng-template #loadWrapper>
+  loading
+</ng-template>
+
+<ng-template #notFound>
+  <app-page-not-found [page]="'works'"></app-page-not-found>
+</ng-template>

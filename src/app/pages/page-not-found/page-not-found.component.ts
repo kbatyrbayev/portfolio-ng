@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {RouterModule} from "@angular/router";
 
 @Component({
@@ -10,7 +10,7 @@ import {RouterModule} from "@angular/router";
       <h1 class="main-title">404</h1>
       <p class="text">Oops, you've lost in site <br>
         We can't find the page that you're looking for...</p>
-      <a class="redirect-button" routerLink="/about">Go About</a>
+      <a class="redirect-button" [routerLink]="'/'+page">Go {{page}}</a>
     </section>
   `,
   styles: [
@@ -52,4 +52,6 @@ import {RouterModule} from "@angular/router";
   ]
 })
 export class PageNotFoundComponent {
+
+  @Input() page = 'about';
 }

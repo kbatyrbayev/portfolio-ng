@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {IWork} from "../../pages/works/works.component";
 import {RouterModule} from "@angular/router";
+import {IWork} from "../../services/work.service";
 
 @Component({
   selector: 'app-work-card',

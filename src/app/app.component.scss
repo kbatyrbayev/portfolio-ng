@@ -17,6 +17,8 @@
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 2;
+  background-image: url("../assets/dark-bg.jpg");
   .logo {
     letter-spacing: 2px;
     text-transform: uppercase;

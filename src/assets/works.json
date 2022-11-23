@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Маторные масла",
+    "types": [
+      "design"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "NFT маркет",
+    "types": [
+      "design"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Сайт визитка для Шахматного клуба",
+    "types": [
+      "design"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Promo site to Ninety one",
+    "types": [
+      "design",
+      "landing"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Promo site to Tesla Cybertruck",
+    "types": [
+      "design",
+      "promo"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Promo site to Witcher",
+    "types": [
+      "promo"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "IDET",
+    "types": [
+      "landing",
+      "angular"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Widgets demonstration",
+    "types": [
+      "design",
+      "angular"
+    ]
+  }
+]

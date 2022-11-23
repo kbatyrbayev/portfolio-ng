@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {WorkCardComponent} from "../../components/work-card/work-card.component";
 import {TitleComponent} from "../../components/title.component";
+import {IWork, WorkService} from "../../services/work.service";
 
 @Component({
   selector: 'app-works',
@@ -10,19 +11,22 @@ import {TitleComponent} from "../../components/title.component";
   templateUrl: './works.component.html',
   styleUrls: ['./works.component.scss']
 })
-export class WorksComponent{
+export class WorksComponent {
 
   workType = WorkType;
   workTypeArray: IWorkTypeArray[] = [];
-  works: IWork[] = [
-    {id: 1, name: 'Маторные масла', types: [this.workType.design], isShow: true},
-    {id: 2, name: 'NFT маркет', types: [this.workType.design], isShow: true},
-    {id: 3, name: 'Сайт визитка для Шахматного клуба', types: [this.workType.design], isShow: true},
-    {id: 4, name: 'Ninety one', types: [this.workType.design, this.workType.landing], isShow: true},
-    {id: 5, name: 'IDET', types: [this.workType.angular], isShow: true}
-  ]
+  works: IWorkEx[] = [];
 
-  constructor() {
+  constructor(private service: WorkService) {
+    this.service.getWorks()
+      .subscribe(res => {
+        this.works = res.map(r => {
+          return {
+            ...r,
+            isShow: true
+          }
+        })
+    });
     this.workTypeArray = Object.values(this.workType).map(r => {
       return {
         type: r,
@@ -40,29 +44,28 @@ export class WorksComponent{
     const types = this.workTypeArray.filter(f => f.active).map(r => r.type);
     if (types.length) {
       this.works.filter(work => {
-        work.isShow = work.types.filter(value => types.includes(value)).length > 0 ;
+        work.isShow = work.types.filter(value => types.includes(value)).length > 0;
       });
-    } else if(types.length === 0) {
+    } else if (types.length === 0) {
       this.works.forEach(f => f.isShow = true);
     }
   }
 
 }
 
-export interface IWork {
-  id: number;
-  name: string;
-  types: WorkType[];
-  isShow: boolean;
-}
 
 export enum WorkType {
   design = 'design',
-  angular = 'angular',
-  landing = 'landing'
+  landing = 'landing',
+  promo = 'promo',
+  angular = 'angular'
 }
 
 interface IWorkTypeArray {
   type: WorkType;
   active: boolean;
+}
+
+interface IWorkEx extends IWork {
+  isShow: boolean;
 }
