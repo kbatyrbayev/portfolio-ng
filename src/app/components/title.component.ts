@@ -25,7 +25,7 @@ import {Component, Input} from "@angular/core";
         &:after {
           content: '';
           display: block;
-          margin: 0 auto;
+          margin: 20px auto 0;
           width: 4rem;
           height: 3px;
           border-radius: 3px;

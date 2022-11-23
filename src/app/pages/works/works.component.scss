@@ -12,13 +12,13 @@
       font-size: 0.8rem;
       cursor: pointer;
       user-select: none;
-      background: #c5c5c5;
+      background: goldenrod;
       color: #131313;
       font-weight: 600;
 
       &--active {
-        background: #131313;
-        color: #c5c5c5;
+        background: gold;
+        color: #000;
       }
     }
   }

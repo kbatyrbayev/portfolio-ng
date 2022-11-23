@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {ContactCardComponent, IContact, LinkType} from "../../components/contact-card/contact-card.component";
+import {ContactCardComponent, IContact, LinkType} from "../../components/contact-card.component";
 import {BehaviorSubject} from "rxjs";
 import {CommonModule} from "@angular/common";
 import {TitleComponent} from "../../components/title.component";

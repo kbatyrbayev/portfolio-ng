@@ -7,6 +7,9 @@
 }
 * {
   margin: 0;
+  &::selection {
+    background: goldenrod;
+  }
 }
 html, body {
   height: 100%;

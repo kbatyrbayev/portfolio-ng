@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {CommonModule} from "@angular/common";
-import {HeaderComponent} from "../header.component";
+import {HeaderComponent} from "./header.component";
 
 @Component({
   standalone: true,
@@ -22,7 +22,6 @@ import {HeaderComponent} from "../header.component";
   styles: [`
     .card {
       margin-bottom: 2rem;
-      padding-right: 2rem;
 
       &__link {
         font-size: 1.2rem;
