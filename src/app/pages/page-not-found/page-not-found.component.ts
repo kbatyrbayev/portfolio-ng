@@ -1,6 +1,9 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
+import {RouterModule} from "@angular/router";
 
 @Component({
+  standalone: true,
+  imports: [RouterModule],
   selector: 'app-page-not-found',
   template: `
     <section class="page-not-found">
@@ -48,12 +51,5 @@ import {Component, OnInit} from '@angular/core';
     `
   ]
 })
-export class PageNotFoundComponent implements OnInit {
-
-  constructor() {
-  }
-
-  ngOnInit(): void {
-  }
-
+export class PageNotFoundComponent {
 }

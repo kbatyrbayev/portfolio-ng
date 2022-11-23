@@ -3,7 +3,6 @@ import {ContactCardComponent, IContact, LinkType} from "../../components/contact
 import {BehaviorSubject} from "rxjs";
 import {CommonModule} from "@angular/common";
 import {TitleComponent} from "../../components/title.component";
-import {Title} from "@angular/platform-browser";
 
 @Component({
   standalone: true,
@@ -23,8 +22,7 @@ export class ContactsComponent {
 
   clock = new BehaviorSubject(this.almatyTime);
 
-  constructor(private title: Title) {
-    this.title.setTitle('Contacts | Kairat Batyrbayev');
+  constructor() {
     setInterval(() => {
       this.clock.next(this.almatyTime);
     }, 1000)

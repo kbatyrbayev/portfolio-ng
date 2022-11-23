@@ -2,7 +2,6 @@ import {Component} from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {TitleComponent} from "../../components/title.component";
 import {HeaderComponent} from "../../components/header.component";
-import {Title} from "@angular/platform-browser";
 
 @Component({
   standalone: true,
@@ -22,7 +21,4 @@ export class AboutComponent{
   ];
   skills = ['Html', ' Css', ' Js', ' Angular2+', ' d3.js', ' Git', ' Figma', ' Bootstrap'];
 
-  constructor(private title: Title) {
-    this.title.setTitle('About | Kairat Batyrbayev');
-  }
 }
