@@ -1,28 +1,28 @@
 <section class="about">
-  <h1>Hi, I'm Kairat - frontend developer</h1>
-  <div class="about-content">
+  <app-title [title]="'Hi, I\'m Kairat - frontend developer'"></app-title>
+  <div class="about__content">
     <div class="experience">
-      <h2>experience</h2>
+      <app-header [title]="'experience'"></app-header>
       <div class="item" *ngFor="let exp of experience">
         <ng-container *ngTemplateOutlet="card; context: exp"></ng-container>
       </div>
     </div>
     <div class="education">
-      <h2>education</h2>
+      <app-header [title]="'education'"></app-header>
       <div class="item" *ngFor="let edu of education">
         <ng-container *ngTemplateOutlet="card; context: edu"></ng-container>
       </div>
     </div>
     <div class="skills">
-      <h2>skills</h2>
+      <app-header [title]="'skills'"></app-header>
       <div class="item">
-        <strong>{{skills}}</strong>
+        <strong class="skills-list">{{skills}}</strong>
       </div>
     </div>
   </div>
 </section>
 
 <ng-template #card let-job="job" let-company="company" let-date="date">
-  <h3>{{job}}</h3>
-  <span>{{date}} / {{company}}</span>
+  <h3 class="job">{{job}}</h3>
+  <span class="date">{{date}} / {{company}}</span>
 </ng-template>
