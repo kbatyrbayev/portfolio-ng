@@ -1,62 +1,34 @@
 [
   {
     "id": 1,
-    "name": "Маторные масла",
+    "name": "Designs on figma",
     "types": [
       "design"
-    ]
+    ],
+    "about": "I performed these works on a free course from the <a class='link' href='https://yudaevschool.ru/' target='_blank'>yudaev.school/branding team</a>. <br> If you want to see exactly my skills in design, you can give me a test task and I will gladly complete it to demonstrate my skills.",
+    "link": "https://www.figma.com/file/opm9CtOFMCwCkYSQJjWZjB/Kairat's-design?node-id=24%3A4&t=QjFvGEx73bHATUHU-1",
+    "linkText": "Launch project on figma"
   },
   {
     "id": 2,
-    "name": "NFT маркет",
-    "types": [
-      "design"
-    ]
-  },
-  {
-    "id": 3,
-    "name": "Сайт визитка для Шахматного клуба",
-    "types": [
-      "design"
-    ]
-  },
-  {
-    "id": 4,
-    "name": "Promo site to Ninety one",
-    "types": [
-      "design",
-      "landing"
-    ]
-  },
-  {
-    "id": 5,
-    "name": "Promo site to Tesla Cybertruck",
-    "types": [
-      "design",
-      "promo"
-    ]
-  },
-  {
-    "id": 6,
-    "name": "Promo site to Witcher",
-    "types": [
-      "promo"
-    ]
-  },
-  {
-    "id": 7,
-    "name": "IDET",
+    "name": "Landing page for IDET",
     "types": [
       "landing",
       "angular"
-    ]
+    ],
+    "about": "This is a landing page for the company «IDET». <br> Website was built on <b>Angular 14</b> and utilises <a class='link' target='_blank' href='https://github.com/ngx-translate/core'><b>ngx-translate</b></a>, <a class='link' target='_blank' href='https://swiperjs.com/'><b>swiperjs</b></a>, <a class='link' target='_blank' href='https://getbootstrap.com/docs/4.0/layout/grid/'><b>Bootstrap grid</b></a>. The website is adapted for different devices.",
+    "link": "https://idet.kz/",
+    "linkText": "Launch project"
   },
   {
-    "id": 8,
+    "id": 3,
     "name": "Widgets demonstration",
     "types": [
       "design",
       "angular"
-    ]
+    ],
+    "about": "Interactive information system for the dispatch centre. <br> Website was built on <b>Angular 14</b>. The website is adapted for different devices.",
+    "link": "https://kairat.dev/projects/widgets/",
+    "linkText": "Launch project"
   }
 ]

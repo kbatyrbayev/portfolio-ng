@@ -1,77 +1,90 @@
-.main {
+:host {
   height: 100%;
-  position: relative;
-  &__container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  &__content {
-    padding-top: 5rem;
-  }
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.main {
+  flex: 1;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: sticky;
-  top: 0;
+  top: -1px;
   z-index: 2;
   background-image: url("../assets/dark-bg.jpg");
+  margin-bottom: 3rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .logo {
     letter-spacing: 2px;
     text-transform: uppercase;
     user-select: none;
+
     &:first-letter {
       color: goldenrod;
       font-weight: bold;
     }
   }
-}
 
-.nav {
-  padding: 20px 0;
-  .menu {
-    display: flex;
-    gap: 2rem;
-    &__link {
-      position: relative;
-      letter-spacing: 0.1rem;
-      &:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: -5px;
-        width: 0;
-        height: 3px;
-        border-radius: 3px;
-        background: transparent;
-        transition: all 0.5s ease-in-out;
-      }
-      &--active {
+  .nav {
+    padding: 20px 0;
+
+    .menu {
+      display: flex;
+      gap: 2rem;
+
+      &__link {
+        position: relative;
+        letter-spacing: 0.1rem;
+
         &:after {
-          width: 2rem;
-          background: goldenrod;
-          transition: all 0.3s ease-in-out;
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          width: 0;
+          height: 3px;
+          border-radius: 3px;
+          background: transparent;
+          transition: all 0.5s ease-in-out;
+        }
+
+        &--active {
+          &:after {
+            width: 2rem;
+            background: goldenrod;
+            transition: all 0.3s ease-in-out;
+          }
         }
       }
-    }
-    @media (max-width: 767px) {
-      gap: 1.5rem;
-    }
-    @media (max-width: 566px) {
-      gap: 1rem;
-    }
-    @media (max-width: 319px) {
-      flex-direction: column;
-      gap: 0.5rem;
+
+      @media (max-width: 767px) {
+        gap: 1.5rem;
+      }
+      @media (max-width: 566px) {
+        gap: 1rem;
+      }
+      @media (max-width: 319px) {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
     }
   }
 }
 
+
 .footer {
   padding: 5rem 0 1rem;
   margin-top: auto;
-  margin-left: auto;
+
+  &__text {
+    text-align: right;
+  }
 }

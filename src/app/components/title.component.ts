@@ -25,7 +25,7 @@ import {Component, Input} from "@angular/core";
         &:after {
           content: '';
           display: block;
-          margin: 20px auto 0;
+          margin: 1.2rem auto 0;
           width: 4rem;
           height: 3px;
           border-radius: 3px;
@@ -35,17 +35,26 @@ import {Component, Input} from "@angular/core";
       @media (max-width: 991px) {
         .title {
           font-size: 2rem;
+          &:after {
+            margin-top: 1rem;
+          }
         }
       }
       @media (max-width: 767px) {
         .title {
           font-size: 1.5rem;
+          &:after {
+            margin-top: 0.7rem;
+          }
         }
       }
       @media (max-width: 566px) {
         .title {
           font-size: 2rem;
           line-height: 2.4rem;
+          &:after {
+            margin-top: 0.5rem;
+          }
         }
       }
     `

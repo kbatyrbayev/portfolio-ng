@@ -6,21 +6,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-
-    .type {
-      padding: 0.3rem 0.7rem;
-      font-size: 0.8rem;
-      cursor: pointer;
-      user-select: none;
-      background: goldenrod;
-      color: #131313;
-      font-weight: 600;
-
-      &--active {
-        background: gold;
-        color: #000;
-      }
-    }
   }
 
   &__content {

@@ -1,0 +1,27 @@
+.button {
+  display: block;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  background: goldenrod;
+  color: #131313;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  border: none;
+
+  &:hover,
+  &--active {
+    background: gold;
+    color: #000;
+  }
+  &--inline {
+    display: inline-block;
+  }
+}
+
+.link {
+  text-decoration: underline;
+  color: goldenrod;
+}

@@ -1,0 +1,49 @@
+.work {
+  display: flex;
+  flex-direction: column;
+  &--button {
+    margin-bottom: 2rem;
+    align-self: flex-start;
+    position: sticky;
+    top: calc(4rem - 1px);
+  }
+  &__redirect-button {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  &__about {
+    text-align: center;
+  }
+  &__picture {
+    margin: 2rem auto 0 auto;
+  }
+  &__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+    &__button {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      .button__label {
+        &--left {
+          margin-left: 10px;
+        }
+        &--right {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.arrow-icon {
+  &--left {
+    rotate: 180deg;
+  }
+}

@@ -27,4 +27,7 @@ export interface IWork {
   id: number;
   name: string;
   types: WorkType[];
+  about: string;
+  link: string;
+  linkText: string;
 }

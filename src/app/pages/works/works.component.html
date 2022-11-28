@@ -1,9 +1,9 @@
 <section class="works">
   <app-title title="My Works"></app-title>
   <div class="works__filter">
-    <div class="type" *ngFor="let item of workTypeArray" (click)="selectType(item)" [class.type--active]="item.active">
+    <button class="button" *ngFor="let item of workTypeArray" (click)="selectType(item)" [class.button--active]="item.active">
       {{item.type}}
-    </div>
+    </button>
   </div>
   <div class="works__content">
     <div class="row">

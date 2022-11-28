@@ -1,11 +1,29 @@
 <section class="work" *ngIf="!loading; else loadWrapper">
   <ng-container *ngIf="work; else notFound">
+    <button [routerLink]="'/works'" class="button work--button">Back</button>
     <app-title [title]="work.name"></app-title>
+    <p [innerHTML]="work.about" class="work__about"></p>
+    <div class="work__redirect-button">
+      <a class="button"
+         [attr.href]="work.link"
+         target="_blank">{{work.linkText}}</a>
+    </div>
+    <img class="work__picture" [src]="'./assets/works/about/'+work.id+'.png'" alt="work-picture">
+    <footer class="work__footer">
+      <a class="button work__footer__button" [routerLink]="'/works/'+this.prevId">
+        <img class="arrow-icon arrow-icon&#45;&#45;left" src="./assets/arrow-icon.svg" alt="arrow-icon">
+        <span class="button__label button__label&#45;&#45;left">Previous project</span>
+      </a>
+      <a class="button work__footer__button" [routerLink]="'/works/'+this.nextId">
+        <span class="button__label button__label&#45;&#45;right">Next project</span>
+        <img src="./assets/arrow-icon.svg" alt="arrow-icon">
+      </a>
+    </footer>
   </ng-container>
 </section>
 
 <ng-template #loadWrapper>
-  loading
+  <app-loader></app-loader>
 </ng-template>
 
 <ng-template #notFound>
