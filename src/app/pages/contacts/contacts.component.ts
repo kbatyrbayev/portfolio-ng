@@ -18,6 +18,8 @@ export class ContactsComponent {
     {title: 'linkedin', link: 'linkedin.com/in/kbatyrbayev', type: LinkType.Link},
     {title: 'gmail', link: 'k.batyrbayev@gmail.com', type: LinkType.Email},
     {title: 'resume', link: 'download PDF', type: LinkType.File},
+    {title: 'github', link: 'github.com/kbatyrbayev', type: LinkType.Link},
+    {title: 'leetcode', link: 'leetcode.com/kbatyrbayev', type: LinkType.Link},
   ];
 
   clock = new BehaviorSubject(this.almatyTime);

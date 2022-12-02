@@ -3,7 +3,7 @@
 
   &__content {
     display: grid;
-    grid-template-areas: 'exp edu' 'exp skills';
+    grid-template-areas: 'exp edu' 'exp skills' 'exp languages';
     gap: 2rem;
     grid-template-columns: 1fr 1fr;
 
@@ -22,6 +22,10 @@
 
 .skills {
   grid-area: skills;
+}
+
+.languages {
+  grid-area: languages;
 }
 
 .item {
@@ -52,7 +56,7 @@
     font-size: 1.5rem;
 
     &__content {
-      grid-template-areas: 'exp' 'edu' 'skills';
+      grid-template-areas: 'exp' 'edu' 'skills' 'languages';
       grid-template-columns: 1fr;
 
       > div {

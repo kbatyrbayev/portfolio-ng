@@ -30,4 +30,11 @@ export interface IWork {
   about: string;
   link: string;
   linkText: string;
+  projects?: {
+    name: string;
+    about: string;
+    img: string;
+    link?: string;
+    figmaLink?: string;
+  }[]
 }

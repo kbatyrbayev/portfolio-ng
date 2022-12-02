@@ -20,4 +20,5 @@ export class AboutComponent {
     {job: 'Bachelor of Computer Science', company: 'Suleyman Demirel University', date: '2011 - 2016', link: 'https://sdu.edu.kz/'}
   ];
   skills = ['Html', ' Css', ' Js', ' Angular2+', ' Git', ' Figma', ' Bootstrap'];
+  languages = ['Kazakh', ' Russian', ' English'];
 }

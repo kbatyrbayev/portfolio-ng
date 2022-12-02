@@ -16,7 +16,7 @@
       "landing",
       "angular"
     ],
-    "about": "This is a landing page for the company «IDET». <br> Website was built on <b>Angular 14</b> and utilises <a class='link' target='_blank' href='https://github.com/ngx-translate/core'><b>ngx-translate</b></a>, <a class='link' target='_blank' href='https://swiperjs.com/'><b>swiperjs</b></a>, <a class='link' target='_blank' href='https://getbootstrap.com/docs/4.0/layout/grid/'><b>Bootstrap grid</b></a>. The website is adapted for different devices.",
+    "about": "This is a landing page for the company «IDET». <br> Website was built on <b>Angular 14</b> and utilises <a class='link' target='_blank' href='https://github.com/ngx-translate/core'><b>ngx-translate</b></a>, <a class='link' target='_blank' href='https://swiperjs.com/'><b>swiperjs</b></a>, <a class='link' target='_blank' href='https://getbootstrap.com/docs/4.0/layout/grid/'><b>bootstrap grid</b></a>. The website is adapted for different devices.",
     "link": "https://idet.kz/",
     "linkText": "Launch project"
   },
@@ -30,5 +30,47 @@
     "about": "Interactive information system for the dispatch centre. <br> Website was built on <b>Angular 14</b>. The website is adapted for different devices.",
     "link": "https://kairat.dev/projects/widgets/",
     "linkText": "Launch project"
+  },
+  {
+    "id": 4,
+    "name": "Pet projects",
+    "types": [
+      "design",
+      "html|css|js"
+    ],
+    "projects": [
+      {
+        "name": "Landing page for product IRIS",
+        "about": "HTML, CSS, SCSS, JS. Adaptive, Bootstrap grid. BEM methodology",
+        "img": "p1.png",
+        "link": "https://kbatyrbayev.github.io/html-layouts/iris/"
+      },
+      {
+        "name": "Site card for the TV series Supernatural",
+        "about": "HTML, CSS, SCSS, JS. Animate.css, SwiperJS, FancyboxJS. Adaptive",
+        "img": "p2.png",
+        "link": "https://kbatyrbayev.github.io/html-layouts/supernatural/"
+      },
+      {
+        "name": "Site to new car by Tesla, Cybertruck",
+        "about": "HTML, CSS. Designed on Figma. Partially adapted",
+        "img": "p3.png",
+        "figmaLink": "https://www.figma.com/file/svCf2JSqrpSLWIUMJxMuRM/Tesla?node-id=0%3A1&t=9hRQd7rmF932jYUF-1",
+        "link": "https://kbatyrbayev.github.io/html-layouts/tesla/"
+      },
+      {
+        "name": "Promo site to concert of NinetyOne",
+        "about": "HTML, CSS. Adaptive. Designed on Figma",
+        "img": "p4.png",
+        "figmaLink": "https://www.figma.com/file/wxztJoFv8HzPWvRlkFEq3A/NinetyOne?node-id=1%3A2&t=bd7VBnPx5h0OBidx-1",
+        "link": "https://kbatyrbayev.github.io/html-layouts/ninetyone/"
+      },
+      {
+        "name": "Design of site for Barbershop",
+        "about": "Designed on Figma",
+        "img": "p5.png",
+        "figmaLink": "https://www.figma.com/file/3jQNGFmGzDx7ADzz9Cqqlv/BarberShop?node-id=1%3A2&t=u3S9HSDYiy4758Fg-1"
+      }
+    ]
   }
 ]
