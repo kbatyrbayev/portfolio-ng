@@ -20,7 +20,6 @@ export class WorksComponent {
   constructor(private service: WorkService) {
     this.service.getWorks()
       .subscribe(res => {
-        console.log(res)
         this.works = res.map(r => {
           return {
             ...r,

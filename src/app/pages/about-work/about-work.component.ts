@@ -19,7 +19,6 @@ export class AboutWorkComponent implements OnInit {
   id!: number;
   data: IWork [] = [];
   work!: IWork;
-  loading = false;
   prevId!: number;
   nextId!: number;
 
@@ -32,14 +31,7 @@ export class AboutWorkComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.loading = true;
     this.service.getWorks()
-      .pipe(
-        delay(500),
-        finalize(() => {
-          this.loading = false;
-        })
-      )
       .subscribe(data => {
         this.data = data;
         this.loadData();

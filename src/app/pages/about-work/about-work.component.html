@@ -1,4 +1,4 @@
-<section class="work" *ngIf="!loading; else loadWrapper">
+<section class="work">
   <ng-container *ngIf="work; else notFound">
     <button [routerLink]="'/works'" class="button work--button">Back</button>
     <app-title [title]="work.name"></app-title>
@@ -45,10 +45,6 @@
     </footer>
   </ng-container>
 </section>
-
-<ng-template #loadWrapper>
-  <app-loader></app-loader>
-</ng-template>
 
 <ng-template #notFound>
   <app-page-not-found [page]="'works'"></app-page-not-found>
