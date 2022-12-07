@@ -12,7 +12,7 @@ import {HeaderComponent} from "./header.component";
       <ng-container [ngSwitch]="contact.type">
         <a class="card__link" *ngSwitchCase="linkType.Link" [attr.href]="'https://www.'+contact.link"
            target="_blank">{{contact.link}}</a>
-        <a class="card__link" *ngSwitchCase="linkType.File" [attr.href]="'./assets/cv_pdf.pdf'"
+        <a class="card__link" *ngSwitchCase="linkType.File" [attr.href]="'./assets/CV_KairatBatyrbayev.pdf'"
            target="_blank">{{contact.link}}</a>
         <a class="card__link" *ngSwitchCase="linkType.Email" [attr.href]="'mailto:'+contact.link"
            target="_blank">{{contact.link}}</a>

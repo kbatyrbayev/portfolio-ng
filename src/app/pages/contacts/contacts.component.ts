@@ -14,13 +14,17 @@ import {TitleComponent} from "../../components/title.component";
 export class ContactsComponent {
 
   contacts: IContact[] = [
-    {title: 'telegram', link: 't.me/kairat_tg', type: LinkType.Link},
-    {title: 'linkedin', link: 'linkedin.com/in/kbatyrbayev', type: LinkType.Link},
+    {title: 'resume', link: 'open PDF', type: LinkType.File},
     {title: 'gmail', link: 'k.batyrbayev@gmail.com', type: LinkType.Email},
-    {title: 'resume', link: 'download PDF', type: LinkType.File},
+    {title: 'linkedin', link: 'linkedin.com/in/kbatyrbayev', type: LinkType.Link},
+    {title: 'telegram', link: 't.me/kbatyrbayev', type: LinkType.Link},
     {title: 'github', link: 'github.com/kbatyrbayev', type: LinkType.Link},
     {title: 'leetcode', link: 'leetcode.com/kbatyrbayev', type: LinkType.Link},
   ];
+
+  get almatyTime() {
+    return new Date().toLocaleString("en-US", {timeZone: "Asia/Almaty"});
+  }
 
   clock = new BehaviorSubject(this.almatyTime);
 
@@ -30,7 +34,4 @@ export class ContactsComponent {
     }, 1000)
   }
 
-  get almatyTime() {
-    return new Date().toLocaleString("en-US", {timeZone: "Asia/Almaty"});
-  }
 }

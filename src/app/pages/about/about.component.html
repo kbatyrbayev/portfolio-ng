@@ -30,7 +30,7 @@
 
 <ng-template #card let-job="job" let-company="company" let-date="date" let-link="link">
   <h3 class="job">{{job}}</h3>
-  <span class="date">{{date}} /
+  <span class="date">{{date}} |
     <a [attr.href]="link" target="_blank">{{company}}</a>
   </span>
 </ng-template>

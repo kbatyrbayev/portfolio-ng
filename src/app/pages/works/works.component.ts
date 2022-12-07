@@ -57,7 +57,6 @@ export class WorksComponent {
 export enum WorkType {
   design = 'design',
   landing = 'landing',
-  promo = 'promo',
   angular = 'angular'
 }
 

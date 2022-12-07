@@ -1,27 +1,6 @@
 [
   {
     "id": 1,
-    "name": "Designs on figma",
-    "types": [
-      "design"
-    ],
-    "about": "I performed these works on a free course from the <a class='link' href='https://yudaevschool.ru/' target='_blank'>yudaev.school/branding team</a>. <br> If you want to see exactly my skills in design, you can give me a test task and I will gladly complete it to demonstrate my skills.",
-    "link": "https://www.figma.com/file/opm9CtOFMCwCkYSQJjWZjB/Kairat's-design?node-id=24%3A4&t=QjFvGEx73bHATUHU-1",
-    "linkText": "Launch project on figma"
-  },
-  {
-    "id": 2,
-    "name": "Landing page for IDET",
-    "types": [
-      "landing",
-      "angular"
-    ],
-    "about": "This is a landing page for the company «IDET». <br> Website was built on <b>Angular 14</b> and utilises <a class='link' target='_blank' href='https://github.com/ngx-translate/core'><b>ngx-translate</b></a>, <a class='link' target='_blank' href='https://swiperjs.com/'><b>swiperjs</b></a>, <a class='link' target='_blank' href='https://getbootstrap.com/docs/4.0/layout/grid/'><b>bootstrap grid</b></a>. The website is adapted for different devices.",
-    "link": "https://idet.kz/",
-    "linkText": "Launch project"
-  },
-  {
-    "id": 3,
     "name": "Widgets demonstration",
     "types": [
       "design",
@@ -32,7 +11,38 @@
     "linkText": "Launch project"
   },
   {
+    "id": 2,
+    "name": "PDF highlighter",
+    "types": [
+      "angular"
+    ],
+    "about": "It's a pdf highlighter. You can highlight a rectangle and get coordinates.",
+    "link": "https://kbatyrbayev.github.io/ng-pdf-highlighter/",
+    "linkText": "Launch project"
+  },
+  {
+    "id": 3,
+    "name": "Landing page for IDET",
+    "types": [
+      "landing",
+      "angular"
+    ],
+    "about": "This is a landing page for the company «IDET». <br> Website was built on <b>Angular 14</b> and utilises <a class='link' target='_blank' href='https://github.com/ngx-translate/core'><b>ngx-translate</b></a>, <a class='link' target='_blank' href='https://swiperjs.com/'><b>swiperjs</b></a>, <a class='link' target='_blank' href='https://getbootstrap.com/docs/4.0/layout/grid/'><b>bootstrap grid</b></a>. The website is adapted for different devices.",
+    "link": "https://idet.kz/",
+    "linkText": "Launch project"
+  },
+  {
     "id": 4,
+    "name": "Designs on figma",
+    "types": [
+      "design"
+    ],
+    "about": "I performed these works on a free course from the <a class='link' href='https://yudaevschool.ru/' target='_blank'>yudaev.school/branding team</a>. <br> If you want to see exactly my skills in design, you can give me a test task and I will gladly complete it to demonstrate my skills.",
+    "link": "https://www.figma.com/file/opm9CtOFMCwCkYSQJjWZjB/Kairat's-design?node-id=24%3A4&t=QjFvGEx73bHATUHU-1",
+    "linkText": "Launch project on figma"
+  },
+  {
+    "id": 5,
     "name": "Pet projects",
     "types": [
       "design",
