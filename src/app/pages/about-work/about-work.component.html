@@ -17,7 +17,7 @@
                 <img src="./assets/figma.svg" alt="figma-icon">
               </a>
             </div>
-            <img class="project__picture" [src]="'./assets/works/about/'+project.img" alt="work-picture">
+            <img class="project__picture" [src]="'./assets/works/about/'+project.img+'?date='+date" alt="work-picture">
           </div>
         </div>
       </div>
@@ -30,7 +30,7 @@
            [attr.href]="work.link"
            target="_blank">{{work.linkText}}</a>
       </div>
-      <img class="work__picture" [src]="'./assets/works/about/'+work.id+'.png'" alt="work-picture">
+      <img class="work__picture" [src]="'./assets/works/about/'+work.id+'.png?date='+date" alt="work-picture">
     </ng-template>
 
     <footer class="work__footer">

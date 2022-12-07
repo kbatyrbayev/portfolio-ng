@@ -21,6 +21,7 @@ export class AboutWorkComponent implements OnInit {
   work!: IWork;
   prevId!: number;
   nextId!: number;
+  date = new Date().getTime();
 
   constructor(private route: ActivatedRoute,
               private service: WorkService) {
