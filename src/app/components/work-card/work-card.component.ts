@@ -13,6 +13,7 @@ import {IWork} from "../../services/work.service";
 export class WorkCardComponent implements OnInit {
 
   @Input() work!: IWork;
+  date = new Date().getTime();
 
   constructor() { }
 
